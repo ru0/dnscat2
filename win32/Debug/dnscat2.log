@@ -1,0 +1,77 @@
+﻿生成启动时间为 2016/7/24 23:10:44。
+     1>项目“D:\Hack\Proxy\dnscat\dnscat2-0.05\dnscat2-0.05\client\win32\dnscat2.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I..\ /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TC /analyze- /errorReport:prompt ..\libs\buffer.c ..\drivers\command\command_packet.c ..\controller\controller.c ..\libs\dns.c ..\dnscat.c ..\drivers\driver.c ..\drivers\command\driver_command.c ..\drivers\driver_console.c ..\tunnel_drivers\driver_dns.c ..\drivers\driver_exec.c ..\drivers\driver_ping.c ..\libs\crypto\encryptor.c ..\libs\ll.c ..\libs\log.c ..\libs\memory.c ..\libs\my_getopt.c ..\controller\packet.c ..\libs\crypto\salsa20.c ..\libs\select_group.c ..\controller\session.c ..\libs\crypto\sha3.c ..\libs\tcp.c ..\libs\types.c ..\libs\udp.c "..\libs\crypto\micro-ecc\uECC.c"
+         uECC.c
+     1>d:\hack\proxy\dnscat\dnscat2-0.05\dnscat2-0.05\client\libs\crypto\micro-ecc\uecc.c(234): warning C4244: “return”: 从“uECC_word_t”转换到“bitcount_t”，可能丢失数据
+     1>d:\hack\proxy\dnscat\dnscat2-0.05\dnscat2-0.05\client\libs\crypto\micro-ecc\uecc.c(287): warning C4244: “return”: 从“uECC_word_t”转换到“cmpresult_t”，可能丢失数据
+     1>d:\hack\proxy\dnscat\dnscat2-0.05\dnscat2-0.05\client\libs\crypto\micro-ecc\curve-specific.inc(1218): warning C4244: “=”: 从“uint64_t”转换到“uint32_t”，可能丢失数据
+     1>d:\hack\proxy\dnscat\dnscat2-0.05\dnscat2-0.05\client\libs\crypto\micro-ecc\uecc.c(937): warning C4244: “=”: 从“const uECC_word_t”转换到“uint8_t”，可能丢失数据
+         udp.c
+         types.c
+         tcp.c
+         sha3.c
+         session.c
+         select_group.c
+         salsa20.c
+         packet.c
+         my_getopt.c
+     1>d:\hack\proxy\dnscat\dnscat2-0.05\dnscat2-0.05\client\libs\my_getopt.c(59): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 11.0\vc\include\stdlib.h(449) : 参见“getenv”的声明
+     1>d:\hack\proxy\dnscat\dnscat2-0.05\dnscat2-0.05\client\libs\my_getopt.c(155): warning C4996: 'getenv': This function or variable may be unsafe. Consider using _dupenv_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 11.0\vc\include\stdlib.h(449) : 参见“getenv”的声明
+         memory.c
+         log.c
+         ll.c
+         encryptor.c
+         driver_ping.c
+         driver_exec.c
+         driver_dns.c
+     1>d:\hack\proxy\dnscat\dnscat2-0.05\dnscat2-0.05\client\tunnel_drivers\driver_dns.c(418): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 参见“strtok”的声明
+         driver_console.c
+         driver_command.c
+         driver.c
+         正在生成代码...
+         正在编译...
+         dnscat.c
+     1>d:\hack\proxy\dnscat\dnscat2-0.05\dnscat2-0.05\client\dnscat.c(307): warning C4996: 'strtok': This function or variable may be unsafe. Consider using strtok_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 11.0\vc\include\string.h(200) : 参见“strtok”的声明
+         dns.c
+         controller.c
+         command_packet.c
+         buffer.c
+         正在生成代码...
+       Link:
+         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Hack\Proxy\dnscat\dnscat2-0.05\dnscat2-0.05\client\win32\Debug\dnscat2.exe" /INCREMENTAL /NOLOGO ws2_32.lib dnsapi.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Hack\Proxy\dnscat\dnscat2-0.05\dnscat2-0.05\client\win32\Debug\dnscat2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Hack\Proxy\dnscat\dnscat2-0.05\dnscat2-0.05\client\win32\Debug\dnscat2.lib" /MACHINE:X86 /SAFESEH Debug\buffer.obj
+         Debug\command_packet.obj
+         Debug\controller.obj
+         Debug\dns.obj
+         Debug\dnscat.obj
+         Debug\driver.obj
+         Debug\driver_command.obj
+         Debug\driver_console.obj
+         Debug\driver_dns.obj
+         Debug\driver_exec.obj
+         Debug\driver_ping.obj
+         Debug\encryptor.obj
+         Debug\ll.obj
+         Debug\log.obj
+         Debug\memory.obj
+         Debug\my_getopt.obj
+         Debug\packet.obj
+         Debug\salsa20.obj
+         Debug\select_group.obj
+         Debug\session.obj
+         Debug\sha3.obj
+         Debug\tcp.obj
+         Debug\types.obj
+         Debug\udp.obj
+         Debug\uECC.obj
+     1>buffer.obj : warning LNK4075: 忽略“/EDITANDCONTINUE”(由于“/SAFESEH”规范)
+         dnscat2.vcxproj -> D:\Hack\Proxy\dnscat\dnscat2-0.05\dnscat2-0.05\client\win32\Debug\dnscat2.exe
+     1>已完成生成项目“D:\Hack\Proxy\dnscat\dnscat2-0.05\dnscat2-0.05\client\win32\dnscat2.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:10.07
